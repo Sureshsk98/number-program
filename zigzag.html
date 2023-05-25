@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>zigzag</title>
+</head>
+<body>
+    <h1>zigzag</h1>
+    <script>
+        var count=0;
+        var n=5;
+        for(var i=1;i<=n;i++){
+            if(i%2!=0){
+                for(var j=1;j<=n;j++){
+                    count=count+1;
+                    document.write(count+" ");
+                }
+                document.write("<br>");
+            }
+            else{
+                var c=count+1;
+                for(var k=count+5;k>=c;k--){
+                    count=count+1;
+                    document.write(k+" ");
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+</html>
