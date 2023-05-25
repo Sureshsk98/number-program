@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>min & max value</title>
+</head>
+<body>
+    <h1>min & max</h1>
+    <script>
+        var a=[3,5,9,61,400,1,0];
+        var min=a[0];
+        var max=a[0];
+
+        for(var i=0;i<a.length;i++){
+            if(a[i]<=min){
+                min=a[i];
+            }
+            else if(a[i]>=max){
+                    max=a[i];
+                    
+                }
+            }
+        document.write("minimum value is "+min +"<br>");
+        document.write("maximum value is "+max);
+    </script>
+</body>
+</html>
